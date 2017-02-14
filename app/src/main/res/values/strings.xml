@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">截图分享Demo</string>
+    <string name="share_friend_txt_title">好友分享</string>
+    <string name="share_feedback_txt_title">问题反馈</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_screen_shot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/shareLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <shot.sharesdk.mob.com.screenshotshare.ui.ThumbnailLayout
+            android:id="@+id/thumbLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></shot.sharesdk.mob.com.screenshotshare.ui.ThumbnailLayout>
+
+        <shot.sharesdk.mob.com.screenshotshare.ui.FeedBackLayout
+            android:id="@+id/feedBackLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"></shot.sharesdk.mob.com.screenshotshare.ui.FeedBackLayout>
+    </LinearLayout>
+</RelativeLayout>

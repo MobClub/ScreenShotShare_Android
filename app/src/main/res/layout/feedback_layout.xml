@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="0.8"
+    android:background="@drawable/share_bg_cor">
+
+    <TextView
+        android:id="@+id/feedBack"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:text="@string/share_feedback_txt_title"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/feedback"
+        android:layout_margin="14dp"/>
+</LinearLayout>
