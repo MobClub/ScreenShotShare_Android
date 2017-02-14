@@ -1,19 +1,25 @@
 package shot.sharesdk.mob.com.screenshotshare;
 
+import android.app.ActionBar;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.http.SslError;
 import android.support.v4.widget.ContentLoadingProgressBar;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
@@ -21,6 +27,7 @@ import cn.sharesdk.framework.ShareSDK;
 import cn.sharesdk.onekeyshare.OnekeyShare;
 import shot.sharesdk.mob.com.screenshotshare.manager.ScreenShotListenManager;
 import shot.sharesdk.mob.com.screenshotshare.ui.FeedBackLayout;
+import shot.sharesdk.mob.com.screenshotshare.ui.GuideLayout;
 import shot.sharesdk.mob.com.screenshotshare.ui.ThumbnailLayout;
 
 public class ScreenShotActivity extends AppCompatActivity implements View.OnClickListener{
@@ -145,6 +152,9 @@ public class ScreenShotActivity extends AppCompatActivity implements View.OnClic
         });
         webView.setWebChromeClient(new webChromClient());
         webView.loadUrl("http://www.mob.com");
+        GuideLayout guide = new GuideLayout(this);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+        addContentView(guide,layoutParams);
     }
     private class webChromClient extends WebChromeClient {
 
