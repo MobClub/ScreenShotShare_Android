@@ -28,11 +28,5 @@
             android:layout_height="wrap_content"
             android:visibility="gone"></shot.sharesdk.mob.com.screenshotshare.ui.ThumbnailLayout>
 
-        <shot.sharesdk.mob.com.screenshotshare.ui.FeedBackLayout
-            android:id="@+id/feedBackLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:visibility="gone"></shot.sharesdk.mob.com.screenshotshare.ui.FeedBackLayout>
     </LinearLayout>
 </RelativeLayout>
